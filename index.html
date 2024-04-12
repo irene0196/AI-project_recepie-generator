@@ -20,19 +20,23 @@
         <h1>Welcome to the Spanish Recepie Generator</h1>
       </header>
       <main>
-        <form action="" id="recepie-generation-form">
-          <input
-            type="text"
-            placeholder="Enter the main ingredient"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recepie" id="recepie"></div>
+        <div class="form-wrapper">
+          <form action="" id="recepie-generation-form">
+            <input
+              type="text"
+              placeholder="Enter the main ingredient of the recepie"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: potatoes, tomatoes, olives...</div>
+        </div>
+
+        <div class="recepie hidden" id="recepie"></div>
       </main>
       <footer>
         This code has been coded by Irene Caldera Quevedo and it is

@@ -18,6 +18,10 @@ function generateRecepie(event) {
   let prompt = `User Instructions: Generate a spanish food recepie using ${instructionsInput.value} as key ingredient`;
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
+  let recepieElement = document.querySelector("#recepie");
+  recepieElement.classList.remove("hidden");
+  recepieElement.innerHTML = ` <div class="generating">⌛ Generating Spanish Recepie with ${instructionsInput.value} </div>`;
+
   console.log(`Prompt is ${prompt}`);
   console.log(`Prompt is ${context}`);
 
