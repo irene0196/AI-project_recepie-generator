@@ -1,5 +1,5 @@
 function handleRecepie(response) {
-  console.log("recepie generated");
+  //console.log("recepie generated");
   new Typewriter("#recepie", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,8 +22,8 @@ function generateRecepie(event) {
   recepieElement.classList.remove("hidden");
   recepieElement.innerHTML = ` <div class="generating">⌛ Generating Spanish Recepie with ${instructionsInput.value} </div>`;
 
-  console.log(`Prompt is ${prompt}`);
-  console.log(`Prompt is ${context}`);
+  //console.log(`Prompt is ${prompt}`);
+  //console.log(`Prompt is ${context}`);
 
   axios.get(url).then(handleRecepie);
 }
